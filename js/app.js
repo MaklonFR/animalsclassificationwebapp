@@ -1,9 +1,9 @@
-var path_model = 'https://www.smkn1kuwus.sch.id/model_machine_learning/tfjs_model/model.json';
 let model;
 
 // Load the model
 async function loadModel() {
     try {
+        const  path_model = 'https://www.smkn1kuwus.sch.id/model_machine_learning/tfjs_model/model.json';
         model = await tf.loadLayersModel(path_model)
         console.log('Model loaded');
     } catch (error) {
