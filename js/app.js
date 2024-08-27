@@ -3,8 +3,8 @@ let model;
 // Load the model
 async function loadModel() {
     try {
-        const  path_model = 'https://www.smkn1kuwus.sch.id/model_machine_learning/tfjs_model/model.json';
-        model = await tf.loadLayersModel(path_model)
+        const  path_model = 'http://www.smkn1kuwus.sch.id/ml/tfjs_model/model.json';
+        model = await fetch (tf.loadLayersModel(path_model))
         console.log('Model loaded');
     } catch (error) {
         console.error('Error loading model:', error);
