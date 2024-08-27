@@ -4,7 +4,7 @@ let model;
 // Load the model
 async function loadModel() {
     try {
-        model = await tf.loadLayersModel(path_model);
+        model = await tf.loadLayersModel(path_model)
         console.log('Model loaded');
     } catch (error) {
         console.error('Error loading model:', error);
