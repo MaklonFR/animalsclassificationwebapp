@@ -3,7 +3,7 @@ let model;
 // Load the model
 async function loadModel() {
     try {
-        const  path_model = 'http://www.smkn1kuwus.sch.id/ml/tfjs_model/model.json';
+        const  path_model = 'https://www.smkn1kuwus.sch.id/ml/tfjs_model/model.json';
         model = await fetch (tf.loadLayersModel(path_model))
         console.log('Model loaded');
     } catch (error) {
